@@ -49,11 +49,11 @@ home_sections:
         link: /sell/
       - label:
         heading: Lease
-        image:
+        image: /uploads/images/bathtub-in-guam.webp
         link: /lease/
       - label:
         heading: Featured
-        image:
+        image: /uploads/images/white-kitchen.webp
         link:
   - _type: team-carousel
     template: home-agent
