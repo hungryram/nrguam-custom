@@ -1,9 +1,9 @@
 {{ define "main" }}
 {{ $buttonColor := $.Site.Data.appearance.colors }}
 {{ $ihfID := .Site.Data.idx.ihf_client_id }}
-    <div class="uk-section uk-section-large">
-        <div class="uk-section uk-text-center">
-            <h2>Find your next rental home.</h2>
+    <div class="uk-section">
+        <div class="uk-text-center uk-margin-medium-bottom">
+            <h2 class="uk-text-bold">Find your next rental home.</h2>
         </div>
         <div class="uk-container">
             {{ if $.Site.Data.idx.incomplete_subdomain }}
