@@ -18,6 +18,8 @@
     </div>
 </div>
 <script>
-    $("#ihf-main-search-form > fieldset > div:nth-child(1) > div > label").innerHTML("Village");
-</script>
+    $( document ).ready(function() {
+    $("#ihf-main-search-form > fieldset > div:nth-child(1) > div > label").html("Village");
+    })
+    </script>
 {{ partial "global/footer" . }}
