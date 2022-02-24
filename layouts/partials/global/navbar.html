@@ -39,14 +39,14 @@
                     {{ if $navbar.logo }}
                     <a href="{{ .Site.BaseURL }}">
                         {{ if $navColor.transparent_background }}
-                        <img src="{{ $navbar.logo }}"
+                        <img src="{{ .Site.BaseURL }}{{ $navbar.logo }}"
                             alt="{{ .Site.Data.profile.company_name }} logo"
                             width="{{ $navbar.logo_width }}" class="white-logo">
-                        <img src="{{ $navbar.dark_logo }}"
+                        <img src="{{ .Site.BaseURL }}{{ $navbar.dark_logo }}"
                             alt="{{ .Site.Data.profile.company_name }} logo"
                             width="{{ $navbar.logo_width }}" class="dark-logo">
                         {{ else }}
-                        <img src="{{ $navbar.logo }}"
+                        <img src="{{ .Site.BaseURL }}{{ $navbar.logo }}"
                             alt="{{ .Site.Data.profile.company_name }} logo"
                             width="{{ $navbar.logo_width }}" class="white-logo">
                         {{ end }}
@@ -109,13 +109,13 @@
             {{ if $navbar.logo }}
             <a href="{{ .Site.BaseURL }}">
                 {{ if $navColor.transparent_background }}
-                <img src="{{ $navbar.logo }}" alt="{{ .Site.Data.profile.company_name }} logo"
+                <img src="{{ .Site.BaseURL }}{{ $navbar.logo }}" alt="{{ .Site.Data.profile.company_name }} logo"
                     width="{{ $navbar.logo_width }}" class="white-logo">
-                <img src="{{ $navbar.dark_logo }}"
+                <img src="{{ .Site.BaseURL }}{{ $navbar.dark_logo }}"
                     alt="{{ .Site.Data.profile.company_name }} logo"
                     width="{{ $navbar.logo_width }}" class="dark-logo">
                 {{ else }}
-                <img src="{{ $navbar.logo }}" alt="{{ .Site.Data.profile.company_name }} logo"
+                <img src="{{ .Site.BaseURL }}{{ $navbar.logo }}" alt="{{ .Site.Data.profile.company_name }} logo"
                     width="{{ $navbar.logo_width }}">
                 {{ end }}
             </a>
