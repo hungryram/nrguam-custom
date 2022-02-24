@@ -2,24 +2,18 @@ menu:
   - name: Home
     link: https://vesper-module.netlify.app
     menu:
-  - name: Buyers
-    link:
+  - name: Buy
+    link: https://search.idxhome.com/homesearch/162504
     menu:
-      - name: Search the MLS
-        link: https://search.idxhome.com/homesearch/133407
-        menu:
-      - name: IDX Property Organizer
-        link: https://search.idxhome.com//organizer/login/133407
-        menu:
-      - name: Listings
-        link: /listings/
-        menu:
-  - name: Sellers
-    link:
+  - name: Sell
+    link: /sell/
     menu:
-      - name: Home Valuation
-        link: /home-valuation
-        menu:
-  - name: Contact
-    link: /contact
+  - name: Lease
+    link: /lease/
+    menu:
+  - name: Featured
+    link: https://search.idxhome.com/featured/162504
+    menu:
+  - name: Our Team
+    link: /our-team/
     menu:
