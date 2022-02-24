@@ -46,25 +46,25 @@
 <meta property="article:published_time" content={{ .Date.Format "2006-01-02" | safeHTML }} />
 {{- end }} <!-- End Home Statement -->
 
-<link rel="apple-touch-icon" sizes="152x152" href="{{ $icons.onefivetwo }}" />
-<link rel="apple-touch-icon" sizes="144x144" href="{{ $icons.onefourfour }}" />
-<link rel="apple-touch-icon" sizes="120x120" href="{{ $icons.onetwotwo }}" />
-<link rel="apple-touch-icon" sizes="114x114" href="{{ $icons.oneonefour }}" />
-<link rel="apple-touch-icon" sizes="180x180" href="{{ $icons.oneeightzero }}" />
-<link rel="apple-touch-icon" sizes="72x72" href="{{ $icons.seventwo }}" />
-<link rel="apple-touch-icon" href="{{ $favicon }}" />
-<link rel="shortcut icon" href="{{ $favicon }}" />
+<link rel="apple-touch-icon" sizes="152x152" href="{{ .Site.BaseURL }}{{ $icons.onefivetwo }}" />
+<link rel="apple-touch-icon" sizes="144x144" href="{{ .Site.BaseURL }}{{ $icons.onefourfour }}" />
+<link rel="apple-touch-icon" sizes="120x120" href="{{ .Site.BaseURL }}{{ $icons.onetwotwo }}" />
+<link rel="apple-touch-icon" sizes="114x114" href="{{ .Site.BaseURL }}{{ $icons.oneonefour }}" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}{{ $icons.oneeightzero }}" />
+<link rel="apple-touch-icon" sizes="72x72" href="{{ .Site.BaseURL }}{{ $icons.seventwo }}" />
+<link rel="apple-touch-icon" href="{{ .Site.BaseURL }}{{ $favicon }}" />
+<link rel="shortcut icon" href="{{ .Site.BaseURL }}{{ $favicon }}" />
 <link rel="canonical" href="{{ .Permalink }}" />
 <meta name="twitter:site" content="@{{ .Site.Data.profile.search_engine_optimization.twitter_card.twitter_username }}">
 
 {{ if .Params.featured_image }}
-<meta property="og:image" content="{{ .Params.featured_image }}" />
-<meta name="twitter:image" content="{{ .Params.featured_image }}" />
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.featured_image }}" />
+<meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.featured_image }}" />
 <meta name="twitter:card" content="summary_large_image">
 {{ end }}
 
 {{ if .Params.photos.gallery }}
-<meta property="og:image" content="{{ index .Params.photos.gallery 0 }}" />
-<meta name="twitter:image" content="{{ index .Params.photos.gallery 0 }}" />
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ (index .Params.photos.gallery 0).image }}" />
+<meta name="twitter:image" content="{{ .Site.BaseURL }}{{ (index .Params.photos.gallery 0).image }}" />
 <meta name="twitter:card" content="summary_large_image">
 {{ end }}
