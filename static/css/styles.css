@@ -37,10 +37,6 @@ body a {
     color: inherit;
 }
 
-body a:empty {
-    display: none;
-}
-
 body em {
     color: inherit;
 }
