@@ -54,7 +54,7 @@ home_sections:
       - label:
         heading: Featured
         image: /uploads/images/white-kitchen.webp
-        link:
+        link: https://search.idxhome.com/featured/162504
   - _type: team-carousel
     template: home-agent
     heading: Our Team
