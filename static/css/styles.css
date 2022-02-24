@@ -17,13 +17,8 @@ body .uk-heading-large,
 body .uk-heading-medium, 
 body .uk-heading-small, 
 body .uk-heading-xlarge {
-    font-family: "Raleway", sans-serif!important;
+    font-family: 'Playfair Display', serif!important;
     line-height: 1.5;
-}
-
-.main-hero p {
-    color: #fff;
-    font-size: 17px; 
 }
 
 body {
@@ -69,9 +64,6 @@ div.uk-overlay-baseof {
     }
 }
 
-div.single-details-list ul.uk-list>:nth-child(n+2) {
-    margin-top: 0;
-}
 div.uk-container {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -99,7 +91,7 @@ button.uk-button.uk-button-primary {
   }
 
 .hero-overlay {
-    background: rgba(69 69 69 / 30%);
+    background: rgb(0 0 0 / 56%);
 }
 
 .listing-detail-overlay {
@@ -108,11 +100,11 @@ button.uk-button.uk-button-primary {
 
 .feature-box-overlay {
     transition: .3s;
-    background: rgba(0 0 0 / 20%);
+    background: rgba(0 0 0 / 40%);
 }
 
 .feature-box-overlay:hover {
-    background: rgba(0 0 0 / 40%);
+    background: rgba(0 0 0 / 60%);
     transition: .3s;
 }
 
@@ -132,6 +124,19 @@ div#home-section div.uk-section:nth-child(odd) {
 
 .border {
     border: 1px solid rgba(204, 204, 204, 0.4);
+}
+
+div.landlord {
+    transition: .2s;
+}
+
+div.landlord:hover {
+    opacity: .8;
+    transition: .2s;
+}
+
+.uk-overlay-agent {
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7));
 }
 
 /* NAVBAR */
@@ -156,19 +161,6 @@ div.top-navbar ul.uk-navbar-nav>li>a {
 div.uk-navbar-dropdown {
     padding: 10px;
 }
-
-div .uk-light .uk-navbar-nav>li>a {
-    color: #fff;
-}
-
-h2.site-title {
-    font-weight: 500;
-}
-
-h2.site-title.dark-logo {
-    color: #000;
-}
-
 
 /* HERO */
 
@@ -446,8 +438,24 @@ footer.footer a:hover {
     transition: .3s ease;
 }
 
-.editor-link a {
-    background: yellow;
-    padding: 10px;
-    text-transform: uppercase;
+/* FEATURED BOXES */
+
+div.featured-boxes h3 {
+    background: white;
+    color: #000;
+    position: relative;
+    padding: 20px 10px;
+    left: 0;
+    width: 70%;
+    font-size: 1.2rem;
+}
+
+.feature-box-overlay {
+    transition: .3s;
+    background: rgba(0 0 0 / 20%);
+}
+
+.feature-box-overlay:hover {
+    background: rgba(0 0 0 / 40%);
+    transition: .3s;
 }
