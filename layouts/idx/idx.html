@@ -1,6 +1,6 @@
   
 {{ partial "global/head" . }}
-<div class="uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle page-banner" style="background: url({{ .Site.Data.appearance.pages.image }})no-repeat center;background-size:cover">
+<div class="uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle page-banner" style="background: url({{ .Site.BaseURL }}{{ .Site.Data.appearance.pages.image }})no-repeat center;background-size:cover">
     <div class="hero-overlay uk-position-cover"></div>
 
     <div class="uk-position-top full-nav-wrapper">
@@ -17,4 +17,7 @@
         {idx_body}
     </div>
 </div>
+<script>
+    $("#ihf-main-search-form > fieldset > div:nth-child(1) > div > label").innerHTML("Village");
+</script>
 {{ partial "global/footer" . }}
