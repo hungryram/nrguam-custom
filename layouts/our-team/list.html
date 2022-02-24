@@ -88,12 +88,15 @@
                                             <tr>
                                                 <td>
                                                 </td>
-                                                <td class="uk-text-right"><a href="{{ .Permalink }}"
-                                                        class="uk-text-bold" style="color:{{ $linkColor }}">Read
-                                                        more</a></td>
+
                                             </tr>
                                         </tbody>
                                     </table>
+                                    {{ .Summary }}
+                                    <a href="{{ .Permalink }}"
+                                        class="uk-text-bold" style="color:{{ $linkColor }}"> Read
+                                        more</a>
+
                                 </div>
                             </div>
                         </div>
