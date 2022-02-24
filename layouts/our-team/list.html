@@ -74,7 +74,7 @@
                                             {{ if .Params.contact.email }}
                                             <tr>
                                                 <td>Email</td>
-                                                <td class="uk-text-right@s"><a href="tel:{{ .Params.contact.email }}">{{
+                                                <td class="uk-text-right@s"><a href="mailto:{{ .Params.contact.email }}">{{
                                                         .Params.contact.email }}</a></td>
                                             </tr>
                                             {{ end }}
@@ -82,7 +82,7 @@
                                             <tr>
                                                 <td>Website</td>
                                                 <td class="uk-text-right@s"><a href="{{ .Params.contact.website }}"
-                                                        target="_blank">{{ .Params.contact.website }}</a></td>
+                                                        target="_blank" rel="noopener">{{ .Params.contact.website }}</a></td>
                                             </tr>
                                             {{ end }}
                                             <tr>
