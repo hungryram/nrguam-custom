@@ -1,12 +1,9 @@
 branding:
-  site_title: Real Estate
-  logo: >-
-    
-  favicon: >-
-    https://res.cloudinary.com/hungryram19/image/upload/v1630445963/templates/realestate2/favicon_zlmzct.png
-  dark_logo: >-
-    https://res.cloudinary.com/hungryram19/image/upload/v1628898739/templates/realestate2/re-logo_l6o3kg.png
-  logo_width: 120
+  site_title: NR Guam
+  logo: /uploads/images/national-realty-n-logo-alt-small-4-e1609325162378.webp
+  favicon: /uploads/images/nrguam-favicon.jpg
+  dark_logo: /uploads/images/national-realty-n-logo-small-optimized-3.webp
+  logo_width: 250
 icons:
   onefivetwo:
   onefourfour:
