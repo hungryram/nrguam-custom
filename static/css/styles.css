@@ -188,6 +188,10 @@ div.uk-sticky.uk-sticky-below.uk-sticky-fixed.undefined .white-logo,
 }
 
 
+.uk-light .uk-navbar-nav>li>a {
+    color: #fff;
+}
+
 /* FORM */
 
 input#search-query {

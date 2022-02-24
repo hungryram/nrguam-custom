@@ -9,7 +9,7 @@
     <div class="uk-container">
       <div class="uk-text-center">
         {{ if .heading }}
-        <h2 class="uk-text-center uk-h3">{{ .heading }}</h2>
+        <h2 class="uk-text-center">{{ .heading }}</h2>
         {{ end }}
         {{ if .body }}
         <p class="uk-text-center">{{ .body | markdownify }}</p>
@@ -33,7 +33,7 @@
   <div class="uk-section">
     <div class="uk-container uk-container-large">
       {{ if .heading }}
-      <h2 class="uk-text-center uk-h3">{{ .heading }}</h2>
+      <h2 class="uk-text-center">{{ .heading }}</h2>
       {{ end }}
       {{ if .body }}
       <p class="uk-text-center">{{ .body | markdownify }}</p>
@@ -133,7 +133,7 @@
   <div class="uk-section">
     <div class="uk-container uk-container-large">
       {{ if .heading }}
-      <h2 class="uk-text-center uk-h3">{{ .heading }}</h2>
+      <h2 class="uk-text-center">{{ .heading }}</h2>
       {{ end }}
       {{ if .body }}
       <p class="uk-text-center">{{ .body | markdownify }}</p>
@@ -170,7 +170,7 @@
 
   {{ if eq "text-and-image" .template }}
   {{ $buttonColor := $.Site.Data.appearance.colors }}
-  <div class="uk-section">
+  <div class="uk-section uk-section-large">
     <div class="uk-container uk-container-large">
       <div class="uk-text-{{ if not .image }}center{{ else }}left{{ end }} uk-flex-middle" uk-grid>
         {{ if .image }}
@@ -183,7 +183,7 @@
         <div class="uk-width-expand@s">
           <div class="uk-card{{ if not .image }} uk-flex uk-flex-center{{ end }}">
             <div class="{{ if not .image }}uk-width-2xlarge{{ end }}">
-              <h2 class="uk-h3">{{ .heading }}</h2>
+              <h2>{{ .heading }}</h2>
               <div class="md-content">
                 <p>{{ .body | markdownify }}</p>
               </div>
@@ -257,7 +257,7 @@
         <div class="uk-width-1-2@m">
           <div class="text-form">
             {{ if .form.heading }}
-            <h2 class="uk-h3">{{ .form.heading }}</h2>
+            <h2>{{ .form.heading }}</h2>
             {{ end }}
             {{ if .form.body }}
             <div class="md-content">
@@ -305,7 +305,7 @@
   <div class="uk-section">
     <div class="uk-container uk-container-large">
       <div class="uk-text-center uk-margin-large">
-        {{ if .heading }}<h2 class="uk-dark uk-h3">{{ .heading }}</h2>{{ end }}
+        {{ if .heading }}<h2 class="uk-dark">{{ .heading }}</h2>{{ end }}
         {{ if .body }}
         <div class="md-content">
           <p>{{ .body | markdownify }}</p>
@@ -341,7 +341,7 @@
   <div class="uk-section">
     <div class="uk-container uk-container-large">
       <div class="uk-text-center uk-margin-large">
-        {{ if .heading }}<h2 class="uk-dark uk-h3">{{ .heading }}</h2>{{ end }}
+        {{ if .heading }}<h2 class="uk-dark">{{ .heading }}</h2>{{ end }}
         {{ if .body }}
         <div class="md-content">
           <p>{{ .body | markdownify }}</p>
@@ -378,7 +378,7 @@
   <div class="uk-section">
     <div class="uk-container uk-container-large">
       <div class="uk-text-center uk-margin-large">
-        {{ if .heading }}<h2 class="uk-dark uk-h3">{{ .heading }}</h2>{{ end }}
+        {{ if .heading }}<h2 class="uk-dark">{{ .heading }}</h2>{{ end }}
         {{ if .body }}
         <div class="md-content">
           <p>{{ .body | markdownify }}</p>
@@ -414,7 +414,7 @@
   <div class="uk-section">
     <div class="uk-container uk-container-large">
       <div class="uk-text-center uk-margin-large">
-        {{ if .heading }}<h2 class="uk-dark uk-h3">{{ .heading }}</h2>{{ end }}
+        {{ if .heading }}<h2 class="uk-dark">{{ .heading }}</h2>{{ end }}
         {{ if .body }}
         <div class="md-content">
           <p>{{ .body | markdownify }}</p>
