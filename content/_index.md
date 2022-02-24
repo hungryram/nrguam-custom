@@ -14,8 +14,8 @@ video_background:
 slideshow:
   - heading: Guam real estate made easy.
     subtitle:
-    link_label: Read More
-    link: https://www.hungryram.com
+    link_label: Search Properties
+    link: https://search.idxhome.com/homesearch/162504
     image: >-
       https://res.cloudinary.com/hungryram19/image/upload/v1630458883/templates/realestate2/shutterstock_12168997453_dgp9fa.jpg
     body: Residential &middot; Commercial &middot; Property Management
