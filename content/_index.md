@@ -41,7 +41,7 @@ home_sections:
       - label:
         heading: Buy
         image: /uploads/images/20200823-112100-2-768x512.webp
-        link:
+        link: https://search.idxhome.com/homesearch/162504
       - label:
         heading: Sell
         image: /uploads/images/white-exterior-home-in-guam.jpg
