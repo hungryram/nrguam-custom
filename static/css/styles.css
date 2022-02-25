@@ -175,6 +175,10 @@ div.uk-sticky.uk-sticky-below.uk-sticky-fixed.undefined .white-logo,
     display: none;
 }
 
+.hero-overlay {
+    background: rgb(0 0 0 / 56%);
+}
+
 .uk-navbar-sticky .dark-logo {
     display: block;
 }
