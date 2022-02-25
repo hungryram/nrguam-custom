@@ -36,7 +36,7 @@
                     </h2>
                     <ul class="uk-list">
                         {{ range $footer.additional_links }}
-                        <li><a href="{{ .link }}">{{ .name }}</a></li>
+                        <li><a href="{{ .Site.BaseURL }}{{ .link }}">{{ .name }}</a></li>
                         {{ end }}
                     </ul>           
                 </div>
