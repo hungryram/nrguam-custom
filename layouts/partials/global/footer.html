@@ -35,10 +35,18 @@
                     	Quick Links
                     </h2>
                     <ul class="uk-list">
-                        {{ range $footer.additional_links }}
-                        <li><a href="{{ .Site.BaseURL }}{{ .link }}">{{ .name }}</a></li>
-                        {{ end }}
-                    </ul>           
+                        
+                        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+                        
+                        <li><a href="https://search.idxhome.com/homesearch/162504">Buy</a></li>
+                        
+                        <li><a href="{{ .Site.BaseURL }}sell">Sell</a></li>
+                        
+                        <li><a href="{{ .Site.BaseURL }}lease">Lease</a></li>
+                        
+                        <li><a href="https://search.idxhome.com/featured/162504">Featured</a></li>
+                        
+                    </ul>    
                 </div>
                 <div>
                     <div class="footer-text">
